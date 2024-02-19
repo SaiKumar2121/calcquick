@@ -49,8 +49,8 @@ npm test
 
 If you have any questions about the project, feel free to contact me at:
 Email: saikumar223359@gmail.com
-GitHub: saikumar
-LinkedIn: saikumar
+GitHub: https://github.com/SaiKumar2121
+LinkedIn: https://www.linkedin.com/in/saikumarkammakatla/
 
 ## Acknowledgements
 
