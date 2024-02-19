@@ -1,0 +1,22 @@
+{
+  "name": "calcquick",
+  "version": "0.0.1",
+  "description": "Easy way to handle all your maths operations",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "postinstall": "echo 'Welcome to CalcQuick, where you can solve your math operations within minutes and in an easy way!'"
+  },
+  "keywords": [
+    "additions",
+    "subtraction",
+    "multiplication",
+    "division",
+    "trigonometry"
+  ],
+  "author": "Rishi Reddy",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
