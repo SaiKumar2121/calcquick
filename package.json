@@ -1,6 +1,6 @@
 {
   "name": "calcquick",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Easy way to handle all your maths operations",
   "main": "index.js",
   "scripts": {
