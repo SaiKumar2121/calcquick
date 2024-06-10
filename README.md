@@ -1,6 +1,6 @@
 # CalcQuick
 
-[![Coverage Status](https://coveralls.io/repos/github/SaiKumar2121/calcquick/badge.svg?branch=main)](https://coveralls.io/github/SaiKumar2121/calcquick?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/SaiKumar2121/calcquick/badge.svg)](https://coveralls.io/github/SaiKumar2121/calcquick)
 
 Easy way to handle all your maths operations
 
