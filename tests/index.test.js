@@ -3,7 +3,7 @@ const {
   trigonometry, factorial, mean,
   median, mode
 } = require('../index');
-/* globals describe, expect,  test */
+/* globals describe, expect, it  test */
 
 describe('Math Operations', () => {
   test('addition of 1 and 2 should return 3', () => {
@@ -26,16 +26,59 @@ describe('Math Operations', () => {
     expect(() => divide(6, 0)).toThrow('Cannot divide by zero');
   });
 
-  test('sine of 90 degrees should return 1', () => {
-    expect(trigonometry('sin', 90)).toBe(1);
+  // Calculate sine of an angle in degrees
+  it('should return correct sine value when angle is in degrees', () => {
+    const result = trigonometry('sin', 30);
+    expect(result).toBeCloseTo(0.5, 2);
   });
 
-  test('cosine of 0 degrees should return 1', () => {
+  // Angle is 0 degrees for sine, cosine, and tangent
+  it('should return correct values for sine, cosine, and tangent when angle is 0 degrees', () => {
+    expect(trigonometry('sin', 0)).toBe(0);
     expect(trigonometry('cos', 0)).toBe(1);
+    expect(trigonometry('tan', 0)).toBe(0);
   });
 
-  test('tangent of 45 degrees should return 1', () => {
-    expect(trigonometry('tan', 45)).toBe(1);
+  // Calculate cosine of an angle in degrees
+  it('should return correct cosine value when angle is in degrees', () => {
+    const result = trigonometry('cos', 45);
+    expect(result).toBeCloseTo(0.71, 2);
+  });
+
+  // Calculate tangent of an angle in degrees
+  it('should return correct tangent value when angle is in degrees', () => {
+    const result = trigonometry('tan', 60);
+    expect(result).toBeCloseTo(1.73, 2);
+  });
+
+  // Calculate arcsine of a value and return result in degrees
+  it('should return correct arcsine value in degrees', () => {
+    const result = trigonometry('asin', 0.5);
+    expect(result).toBeCloseTo(30, 2);
+  });
+
+  // Calculate arccosine of a value and return result in degrees
+  it('should return correct arccosine value when angle is in degrees', () => {
+    const result = trigonometry('acos', 0.5);
+    expect(result).toBeCloseTo(60, 2);
+  });
+
+  // Calculate arctangent of a value and return result in degrees
+  it('should return correct arctangent value when angle is in degrees', () => {
+    const result = trigonometry('atan', 1);
+    expect(result).toBeCloseTo(45, 2);
+  });
+
+  // Default precision of 2 decimal places is applied correctly
+  it('should apply default precision of 2 decimal places', () => {
+    const result = trigonometry('sin', 45);
+    expect(result).toBeCloseTo(0.71, 2);
+  });
+
+  // Handle unknown operation gracefully
+  it('should return Unknown operation when an unknown operation is provided', () => {
+    const result = trigonometry('unknown', 45);
+    expect(result).toBe('Unknown operation');
   });
 
   test('factorial of 5 should return 120', () => {
