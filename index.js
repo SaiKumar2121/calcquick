@@ -1,6 +1,9 @@
+const { binaryToDecimal } = require('./core-math');
 function add (a, b) {
   return a + b;
 }
+
+binaryToDecimal('1010');
 function subtract (a, b) {
   return a - b;
 }
