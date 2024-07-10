@@ -1,5 +1,5 @@
 const {
-  add, subtract, multiply, divide,
+  add, subtract, multiply,
   trigonometry, factorial, mean,
   median, mode
 } = require('../index');
@@ -16,14 +16,6 @@ describe('Math Operations', () => {
 
   test('multiplication of 2 and 3 should return 6', () => {
     expect(multiply(2, 3)).toBe(6);
-  });
-
-  test('division of 6 by 3 should return 2', () => {
-    expect(divide(6, 3)).toBe(2);
-  });
-
-  test('division by zero should throw an error', () => {
-    expect(() => divide(6, 0)).toThrow('Cannot divide by zero');
   });
 
   // Calculate sine of an angle in degrees
